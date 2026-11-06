@@ -17,7 +17,7 @@ function XIcon({ className = "w-3.5 h-3.5" }: { className?: string }) {
  * Footer: Architectural, editorial design matching reference layout:
  * - CONTACT header with "Let's talk" display
  * - 2-column internal navigation
- * - Prominent "bumang124@gmail.com" display mailto headline
+ * - Prominent "hello@umangbanerjee.tech" display mailto headline
  * - Current location and UTC timezone metadata
  * - "→ START A PROJECT" action with underline
  * - Social links (GitHub ↗, LinkedIn ↗, X ↗) and copyright

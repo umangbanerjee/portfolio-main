@@ -18,7 +18,7 @@ export const content: PortfolioContent = {
     headlineLine2: "TECHNOLOGY BUILDER.",
     bio: "I think in products, build with technology, and make decisions with data. Always exploring, building and turning ideas into reality.",
     cutoutImage: "/umang-cutout.png",
-    email: "bumang124@gmail.com",
+    email: "hello@umangbanerjee.tech",
     linkedin: "https://www.linkedin.com/in/umangbanerjee/",
     github: "https://github.com/umangbanerjee",
     x: "https://x.com/umangb_70",
