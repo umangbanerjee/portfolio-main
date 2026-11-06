@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #000000;
+  --text-main: #111111;
+  --text-muted: #555555;
+  --text-faint: #888888;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+html, body {
+  background-color: #000000;
+  color: var(--text-main);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headline dark-to-graphite gradient */
+.text-headline-gradient {
+  background: linear-gradient(180deg, #050505 0%, #1c1c1c 45%, #585858 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Handwritten cursive script for editorial contrast */
+.font-cursive {
+  font-family: 'Caveat', 'Snell Roundhand', 'Brush Script MT', 'Dancing Script', cursive;
+}
+
+/* Authentic hand-drawn circle animation */
+@keyframes drawLoop {
+  0% {
+    stroke-dashoffset: 755;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+.animate-draw-loop {
+  stroke-dasharray: 755;
+  stroke-dashoffset: 0;
+  animation: drawLoop 1.35s cubic-bezier(0.25, 1, 0.5, 1) 0.75s backwards;
+}
+
+/* Subtle background lighting matching reference */
+.hero-canvas {
+  background: radial-gradient(circle at 45% 38%, #F7F6F4 0%, #ECEBE8 55%, #E2E1DD 100%);
+}
+
+/* Premium feathered vignette mask for elegant edge blending */
+.feather-mask {
+  mask-image: radial-gradient(ellipse at center, black 48%, rgba(0, 0, 0, 0.75) 68%, transparent 98%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 48%, rgba(0, 0, 0, 0.75) 68%, transparent 98%);
+}
+
+/* Marquee infinite scroll with motion blur */
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 54s linear infinite;
+  will-change: transform;
+}
+
+/* Polished multi-stop optical fade mask for seamless edge dissolution */
+.marquee-fade-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.04) 3%,
+    rgba(0, 0, 0, 0.18) 7%,
+    rgba(0, 0, 0, 0.48) 12%,
+    rgba(0, 0, 0, 0.82) 18%,
+    black 24%,
+    black 76%,
+    rgba(0, 0, 0, 0.82) 82%,
+    rgba(0, 0, 0, 0.48) 88%,
+    rgba(0, 0, 0, 0.18) 93%,
+    rgba(0, 0, 0, 0.04) 97%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.04) 3%,
+    rgba(0, 0, 0, 0.18) 7%,
+    rgba(0, 0, 0, 0.48) 12%,
+    rgba(0, 0, 0, 0.82) 18%,
+    black 24%,
+    black 76%,
+    rgba(0, 0, 0, 0.82) 82%,
+    rgba(0, 0, 0, 0.48) 88%,
+    rgba(0, 0, 0, 0.18) 93%,
+    rgba(0, 0, 0, 0.04) 97%,
+    transparent 100%
+  );
+}
+
+/* Clean, accessible text selection */
+::selection {
+  background-color: rgba(255, 255, 255, 0.28);
+  color: #FFFFFF;
+}
+
+.hero-canvas ::selection {
+  background-color: rgba(0, 0, 0, 0.18);
+  color: #000000;
+}
