@@ -5,6 +5,7 @@ interface LaptopMockupProps {
   src: string;
   alt: string;
   className?: string;
+  priority?: boolean;
 }
 
 /**
@@ -12,7 +13,12 @@ interface LaptopMockupProps {
  * live web applications and dashboards with realistic titanium bevel,
  * webcam notch, thumb recess, and ambient display reflection.
  */
-export function LaptopMockup({ src, alt, className = "" }: LaptopMockupProps) {
+export function LaptopMockup({
+  src,
+  alt,
+  className = "",
+  priority = false,
+}: LaptopMockupProps) {
   return (
     <div className={`relative mx-auto w-full max-w-4xl select-none ${className}`}>
       {/* Outer ambient glow */}
@@ -36,7 +42,7 @@ export function LaptopMockup({ src, alt, className = "" }: LaptopMockupProps) {
             height={488}
             sizes="(max-width: 1024px) 100vw, 900px"
             className="w-full h-auto block object-contain transition-transform duration-500"
-            priority
+            priority={priority}
             unoptimized
           />
           {/* Subtle Screen Sheen Reflection */}

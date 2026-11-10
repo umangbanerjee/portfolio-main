@@ -7,10 +7,12 @@ import { SelectedWork } from "@/components/sections/SelectedWork";
 import { WorkHistory } from "@/components/sections/WorkHistory";
 import { Skillset } from "@/components/sections/Skillset";
 import { Footer } from "@/components/layout/Footer";
+import { LoadingScreen } from "@/components/ui/LoadingScreen";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen w-full bg-black text-white select-text p-2 sm:p-3 md:p-4 lg:p-5 flex flex-col items-center justify-start overflow-x-clip relative">
+      <LoadingScreen />
       <Header />
       <Hero />
       <Marquee />
